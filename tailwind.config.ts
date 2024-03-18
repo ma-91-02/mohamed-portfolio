@@ -37,6 +37,9 @@ const config: Config = {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         Tajawal: [`var(--font-Tajawal)`, 'sans-serif'],
       },
+      height:{
+        subH:`calc(100% + 140px)`
+      }
     },
   },
   container: {

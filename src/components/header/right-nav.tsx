@@ -31,14 +31,14 @@ export const navData = [
 export default function RightNav() {
   const path = usePathname();
   return (
-    <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
+    <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-20 xl:max-w-md xl:h-screen'>
       {/* inner */}
-      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
+      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[60px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-3xl xl:rounded-full">
         {navData.map((link, index) => {
           return <Link
             className={`${link.path === '/' ?
-              (path === '/en' || path === '/ru' || path === '/ar' ? 'text-yellow-600' : '') :
-              (path.includes(link.path) ? 'text-yellow-600' : '')
+              (path === '/en' || path === '/ru' || path === '/ar' ? 'text-orange-600' : '') :
+              (path.includes(link.path) ? 'text-orange-600' : '')
               } relative flex items-center group hover:text-orange-600 transition-all duration-300 `}
             key={index}
             href={path.replace('/about', '').replace('/services', '').replace('/work', '').replace('/testimonials', '').replace('/contact', '') + link.path}

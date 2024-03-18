@@ -13,7 +13,7 @@ export default function MainHeader() {
       <TopLeftImg/>
       <RightNav/>
       <LeftNav/>
-      <Header />
+      {/* <Header /> */}
       {/* <LocalSwitcher /> */}
     </header>
   )

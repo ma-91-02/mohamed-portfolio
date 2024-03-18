@@ -17,13 +17,13 @@ import { fadeIn } from '@/variants'
 export default function Home() {
   // const t = useTranslations('HomePage');
   return (
-    <>
-      {/* bg img */}
-      {/* <div className=" bg-none xl:bg-explosion xl:bg-cover xl:bg-left xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 z-10"></div> */}
-      <div className=" h-full xl:max-h-[820px] flex flex-col z-20  items-center xl:justify-center  xl:flex-row my-[110px] xl:my-0">
+
+    // <main className=" flex">
+      <div className="xl:px-32 w-full h-full  xl:max-h-[820px] flex flex-col z-20 flex-1 items-center xl:justify-center  xl:flex-row  xl:my-0">
+        <div className="mt-[120px]"></div>
         <ParticlesContainer />
         {/* image */}
-        <div className="w-[60%] md:w-[40%]   flex justify-center items-center">
+        <div className="w-[60%] md:w-[50%]  xl:w-[40%] flex justify-center items-center">
           {/* particles */}
           {/* Avatar img */}
           <motion.div
@@ -31,7 +31,7 @@ export default function Home() {
             className="flex flex-col w-full h-full max-w-[737px] max-h-[578px]">
             <Avatar />
             <div className="bg-orange-600 text-white text-center flex items-center justify-center">
-              <h1 className="text-3xl xl:text-6xl py-2 my-auto flex justify-center items-center h-full w-full">
+              <h1 className="h2 p-2 my-auto flex justify-center text-nowrap  items-center  h-full w-full">
                 Mohamed Al-zurfi
               </h1>
             </div>
@@ -59,11 +59,15 @@ export default function Home() {
             <motion.div variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden' className=" hidden xl:flex">
               <ProjectsBtn />
             </motion.div>
+            <div className="mb-[120px]"></div>
+            {/* <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-left xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div> */}
           </div>
         </div>
 
 
       </div>
-    </>
+    // </main>
+    
+
   );
 }
