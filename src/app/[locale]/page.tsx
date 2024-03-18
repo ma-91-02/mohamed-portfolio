@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <>
       {/* bg img */}
-      <div className=" bg-none xl:bg-explosion xl:bg-cover xl:bg-left xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 z-0"></div>
-      <div className=" h-full xl:max-h-[820px] flex flex-col   items-center xl:justify-center  xl:flex-row my-[110px] xl:my-0">
+      {/* <div className=" bg-none xl:bg-explosion xl:bg-cover xl:bg-left xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 z-10"></div> */}
+      <div className=" h-full xl:max-h-[820px] flex flex-col z-20  items-center xl:justify-center  xl:flex-row my-[110px] xl:my-0">
         <ParticlesContainer />
         {/* image */}
         <div className="w-[60%] md:w-[40%]   flex justify-center items-center">
