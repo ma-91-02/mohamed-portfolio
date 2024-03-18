@@ -1,3 +1,3 @@
-export default function PraticlesContainer(){
+export default function ParticlesContainer(){
   return <div>Praticles Container</div>
 }

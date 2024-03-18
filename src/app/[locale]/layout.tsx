@@ -1,39 +1,46 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-// import "./globals.css";
+import { Tajawal } from "next/font/google";
+import "@/src/app/globals.css";
 import { useTranslations } from "next-intl";
-import Header from "@/src/components/main-header";
+// 
+import MainHeader from "@/src/components/header/main-header";
+import Layout from "@/src/components/layout";
 
-const inter = Inter({ subsets: ["latin"] });
+const tajawal = Tajawal({
+  subsets: ["latin"],
+  variable: '--font-Tajawal',
+  weight: ['200', '300', '400', '500', '700', '800', '900']
+
+});
 
 
 export const metadata: Metadata = {
-  title: "AL-Zurfi Mohamed" ,
+  title: "AL-Zurfi Mohamed",
   description: "Eng AL-Zurfi Mohamed",
 };
 
 interface RootLayoutProps {
   children: React.ReactNode;
   params: {
-    locale: string;
+    locale: string
   }
 }
 export default function RootLayout({
   children,
-  params: { locale },
+  params: { locale }
 }: Readonly<RootLayoutProps>) {
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <div className="flex flex-col min-h-screen  w-full mx-auto">
-        <Header/>
-        <div className=" flex-grow mt-20">
-        {children}
-        footer
+      <head>
+      </head>
+      <body className={tajawal.className}>
+        <div className={`page bg-site bg-cover bg-no-repeat ${tajawal.variable} font-Tajawal relative text-white `}>
+          <MainHeader />
+          <Layout>
+            {children}
+          </Layout>
         </div>
-        </div>
-        
-        </body>
+      </body>
     </html>
   );
 }
