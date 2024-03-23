@@ -39,7 +39,7 @@ export default function ParticlesContainer() {
                 enable: true,
                 mode: "repulse",
               },
-              resize: true,
+              // resize: true,
             },
             modes: {
               push: {
