@@ -10,9 +10,10 @@ export default function MainHeader() {
   const t = useTranslations("Navigation");
   return (
     <header className="">
+      <Header/>
       <TopLeftImg/>
       <RightNav/>
-      <LeftNav/>
+      {/* <LeftNav/> */}
       {/* <Header /> */}
       {/* <LocalSwitcher /> */}
     </header>

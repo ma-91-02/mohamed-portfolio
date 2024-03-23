@@ -11,6 +11,9 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from 'react-icons/hi2';
+
+// components
+import Socials from '../socials';
 // nav data
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
@@ -28,6 +31,8 @@ export const navData = [
     icon: <HiEnvelope />,
   },
 ];
+
+
 export default function LeftNav() {
   const path = usePathname();
   return (
@@ -36,10 +41,11 @@ export default function LeftNav() {
       <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[40px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
         <div className='flex flex-row justify-center items-center xl:flex-col'>
           <LocalSwitcher />
-          <ul className='flex flex-row xl:flex-col items-center justify-between gap-x-4'>
-            <li>f</li>
+          <Socials/>
+          <ul>
+            {/* <li>f</li>
             <li>i</li>
-            <li>g</li>
+            <li>g</li> */}
           </ul>
         </div>
       </div>
