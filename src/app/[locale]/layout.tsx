@@ -30,7 +30,7 @@ export default function RootLayout({
   params: { locale }
 }: Readonly<RootLayoutProps>) {
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={locale==='ar'?"rtl":"ltr"}>
       <head>
       </head>
       <body className={tajawal.className}>

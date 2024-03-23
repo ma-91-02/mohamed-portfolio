@@ -14,8 +14,12 @@
   },
   "HomePage": {
     "mainTitle": "Hi, I am",
+    "title1":"Transforming Ideas",
+    "title2":"Into",
+    "title3":"Digital Reality ",
     "subTitle": "AL-Zurfi Mohamed",
-    "desc": "a computer engineer working in the field of web development, mobile applications, and digital marketing since 2009"
+    "desc": "a computer engineer working in the field of web development, mobile applications, and digital marketing since 2009",
+    "mohamed":"AL-Zurfi Mohamed"
   },
   "AboutPage": {
     "title": "About Me",
