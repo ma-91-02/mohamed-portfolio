@@ -11,7 +11,7 @@ interface TitleProps{
 
 export default function AvatarWithTitle({mohamed}:TitleProps){
   return(
-    <div className="w-[60%] md:w-[50%]  xl:w-full h-full flex justify-center items-center ">
+    <div className=" pb-2 xl:pb-0  xl:w-full h-full flex justify-center items-center ">
     {/* Avatar img */}
     <motion.div
       variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden' transition={{ duration: 1, ease: 'easeInOut' }}

@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className=" h-full">
       <main className="px-[20px] xl:px-32 w-full h-full  flex flex-col z-20 flex-1 items-center xl:justify-center   xl:my-0">
-        <div className="flex w-full h-full  pt-[250px] xl:pt-0 flex-col items-center justify-center xl:flex-row">
+        <div className="flex w-full h-full  pt-[60px] xl:pt-0 flex-col  items-center justify-around xl:justify-center xl:flex-row">
           <AvatarWithTitle mohamed={t("mohamed")} />
           <MainTitle desc={t("desc")}  title1={t("title1")} title2={t("title2")} title3={t("title3")}/>
         </div>

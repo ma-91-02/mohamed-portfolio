@@ -17,7 +17,7 @@ interface MainTitleProps{
 export default function MainTitle({title1, title2, title3, desc}:MainTitleProps) {
   const path = usePathname();
   return (
-    <div className={`flex text-center flex-col justify-center items-center pt-28 xl:pt-0  h-full w-full    mx-auto  ${path.includes('/ar')?"xl:text-right xl:pr-16":"xl:text-left"}`}>
+    <div className={`flex  text-center flex-col justify-center items-center py-8 xl:py-0  h-full w-full    mx-auto  ${path.includes('/ar')?"xl:text-right xl:pr-16":"xl:text-left"}`}>
       {/* title */}
       <motion.h1
         variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
